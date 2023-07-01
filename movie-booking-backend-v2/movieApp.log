@@ -1,0 +1,185 @@
+2023-06-29 16:41:48.802  INFO 34504 --- [restartedMain] com.rbp.movieapp.MovieappApplication     : Starting MovieappApplication using Java 18.0.1.1 on LTIN347099 with PID 34504 (C:\FSE1_Backend\movieapp\movieapp\target\classes started by 2145625 in C:\FSE1_Backend\movieapp\movieapp)
+2023-06-29 16:41:48.813 DEBUG 34504 --- [restartedMain] com.rbp.movieapp.MovieappApplication     : Running with Spring Boot v2.7.10, Spring v5.3.26
+2023-06-29 16:41:48.814  INFO 34504 --- [restartedMain] com.rbp.movieapp.MovieappApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-06-29 16:41:48.896  INFO 34504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-29 16:41:48.896  INFO 34504 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-29 16:41:50.456  INFO 34504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-06-29 16:41:50.551  INFO 34504 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 4 MongoDB repository interfaces.
+2023-06-29 16:41:51.733  INFO 34504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-06-29 16:41:51.752  INFO 34504 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-29 16:41:51.753  INFO 34504 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-06-29 16:41:51.934  INFO 34504 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-29 16:41:51.935  INFO 34504 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3037 ms
+2023-06-29 16:41:52.659  INFO 34504 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/18.0.1.1+2-6"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@25d80f44], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@139b2332]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@3343bacf], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-06-29 16:41:52.702  INFO 34504 --- [cluster-ClusterId{value='649d66f8722b4f0a43804e97', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:241}] to localhost:27017
+2023-06-29 16:41:52.703  INFO 34504 --- [cluster-ClusterId{value='649d66f8722b4f0a43804e97', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=49780000}
+2023-06-29 16:41:52.703  INFO 34504 --- [cluster-rtt-ClusterId{value='649d66f8722b4f0a43804e97', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:240}] to localhost:27017
+2023-06-29 16:41:53.416 DEBUG 34504 --- [restartedMain] c.r.m.security.jwt.AuthTokenFilter       : Filter 'authenticationJwtTokenFilter' configured for use
+2023-06-29 16:41:53.459  INFO 34504 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-29 16:41:55.555  INFO 34504 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-06-29 16:41:55.602  INFO 34504 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22cc97af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a796ec4, org.springframework.security.web.context.SecurityContextPersistenceFilter@25073351, org.springframework.security.web.header.HeaderWriterFilter@51903ae0, org.springframework.web.filter.CorsFilter@1a5c00c4, org.springframework.security.web.authentication.logout.LogoutFilter@1dccdd, com.rbp.movieapp.security.jwt.AuthTokenFilter@2d3eec71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@494c3bcf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63c3269e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4095840d, org.springframework.security.web.session.SessionManagementFilter@6cf6fe6b, org.springframework.security.web.access.ExceptionTranslationFilter@4a10412e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e2ed072]
+2023-06-29 16:41:56.213  INFO 34504 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-06-29 16:41:56.432  INFO 34504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2023-06-29 16:41:56.434  INFO 34504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2023-06-29 16:41:56.435  INFO 34504 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1688037116430
+2023-06-29 16:42:26.495  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+
+2023-06-29 16:42:26.496 ERROR 34504 --- [restartedMain] o.springframework.kafka.core.KafkaAdmin  : Could not configure topics
+
+org.springframework.kafka.KafkaException: Timed out waiting to get existing topics; nested exception is java.util.concurrent.TimeoutException
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:423) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.springframework.kafka.core.KafkaAdmin.checkPartitions(KafkaAdmin.java:402) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.kafka.core.KafkaAdmin.addOrModifyTopicsIfNeeded(KafkaAdmin.java:298) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:201) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:171) ~[spring-kafka-2.8.11.jar:2.8.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:974) ~[spring-beans-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.26.jar:5.3.26]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.10.jar:2.7.10]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.10.jar:2.7.10]
+	at com.rbp.movieapp.MovieappApplication.main(MovieappApplication.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.10.jar:2.7.10]
+Caused by: java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095) ~[na:na]
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:180) ~[kafka-clients-3.1.2.jar:na]
+	at org.springframework.kafka.core.KafkaAdmin.lambda$checkPartitions$10(KafkaAdmin.java:405) ~[spring-kafka-2.8.11.jar:2.8.11]
+	... 18 common frames omitted
+
+2023-06-29 16:42:36.499  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=adminclient-1] Forcing a hard I/O thread shutdown. Requests in progress will be aborted.
+2023-06-29 16:42:36.500  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2023-06-29 16:42:36.501  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] o.a.k.c.a.i.AdminMetadataManager         : [AdminClient clientId=adminclient-1] Metadata update failed
+
+org.apache.kafka.common.errors.TimeoutException: The AdminClient thread has exited. Call: fetchMetadata
+
+2023-06-29 16:42:36.502  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] o.a.k.clients.admin.KafkaAdminClient     : [AdminClient clientId=adminclient-1] Timed out 2 remaining operation(s) during close.
+2023-06-29 16:42:36.507  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2023-06-29 16:42:36.507  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-06-29 16:42:36.507  INFO 34504 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2023-06-29 16:42:36.523  INFO 34504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-29 16:42:36.539  INFO 34504 --- [restartedMain] com.rbp.movieapp.MovieappApplication     : Started MovieappApplication in 48.183 seconds (JVM running for 48.722)
+2023-06-29 16:43:38.565  INFO 34504 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-29 16:43:38.565  INFO 34504 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-29 16:43:38.568  INFO 34504 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-29 16:43:38.832  INFO 34504 --- [http-nio-8081-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:242}] to localhost:27017
+2023-06-29 16:44:38.463 DEBUG 34504 --- [http-nio-8081-exec-3] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:44:38.472 DEBUG 34504 --- [http-nio-8081-exec-3] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:44:38.489 DEBUG 34504 --- [http-nio-8081-exec-7] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:44:38.493 DEBUG 34504 --- [http-nio-8081-exec-7] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:45:32.708  WARN 34504 --- [http-nio-8081-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "1,2,3,4,5,6,7,8,9,": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1,2,3,4,5,6,7,8,9,": not a valid `java.lang.Integer` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 95] (through reference chain: com.rbp.movieapp.models.Ticket["seatNumber"])]
+2023-06-29 16:45:42.796  WARN 34504 --- [http-nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "1,2,3,4,5,6,7,8,9": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "1,2,3,4,5,6,7,8,9": not a valid `java.lang.Integer` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 95] (through reference chain: com.rbp.movieapp.models.Ticket["seatNumber"])]
+2023-06-29 16:45:54.081 DEBUG 34504 --- [http-nio-8081-exec-1] c.r.movieapp.controller.MovieController  : neha03 booked 1 tickets
+2023-06-29 16:46:22.919 DEBUG 34504 --- [http-nio-8081-exec-2] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:46:22.923 DEBUG 34504 --- [http-nio-8081-exec-2] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:46:22.931 DEBUG 34504 --- [http-nio-8081-exec-4] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:46:22.935 DEBUG 34504 --- [http-nio-8081-exec-4] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:46:26.418 DEBUG 34504 --- [http-nio-8081-exec-5] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:46:26.423 DEBUG 34504 --- [http-nio-8081-exec-5] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:46:26.436 DEBUG 34504 --- [http-nio-8081-exec-6] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:46:26.440 DEBUG 34504 --- [http-nio-8081-exec-6] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:46:52.333 DEBUG 34504 --- [http-nio-8081-exec-3] c.r.movieapp.controller.MovieController  : here search a movie by its name
+2023-06-29 16:46:52.344 DEBUG 34504 --- [http-nio-8081-exec-3] c.r.movieapp.controller.MovieController  : listed the available movies with title:w
+2023-06-29 16:47:11.202 DEBUG 34504 --- [http-nio-8081-exec-7] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:11.211 DEBUG 34504 --- [http-nio-8081-exec-7] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:11.224 DEBUG 34504 --- [http-nio-8081-exec-8] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:11.229 DEBUG 34504 --- [http-nio-8081-exec-8] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:22.376 DEBUG 34504 --- [http-nio-8081-exec-9] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:22.383 DEBUG 34504 --- [http-nio-8081-exec-9] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:22.389 DEBUG 34504 --- [http-nio-8081-exec-1] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:22.392 DEBUG 34504 --- [http-nio-8081-exec-1] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:28.254 DEBUG 34504 --- [http-nio-8081-exec-5] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:28.257 DEBUG 34504 --- [http-nio-8081-exec-5] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:28.270 DEBUG 34504 --- [http-nio-8081-exec-6] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:28.273 DEBUG 34504 --- [http-nio-8081-exec-6] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:44.229 DEBUG 34504 --- [http-nio-8081-exec-8] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:44.234 DEBUG 34504 --- [http-nio-8081-exec-8] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:44.239 DEBUG 34504 --- [http-nio-8081-exec-10] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:44.243 DEBUG 34504 --- [http-nio-8081-exec-10] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:55.846 DEBUG 34504 --- [http-nio-8081-exec-9] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:55.850 DEBUG 34504 --- [http-nio-8081-exec-9] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:47:55.856 DEBUG 34504 --- [http-nio-8081-exec-1] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:47:55.860 DEBUG 34504 --- [http-nio-8081-exec-1] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:48:37.455 DEBUG 34504 --- [http-nio-8081-exec-5] c.r.movieapp.controller.MovieController  : forgot password endopoint accessed by neha03
+2023-06-29 16:48:37.539 DEBUG 34504 --- [http-nio-8081-exec-5] c.r.movieapp.controller.MovieController  : neha03 has password changed successfully
+2023-06-29 16:49:08.788 DEBUG 34504 --- [http-nio-8081-exec-3] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:49:08.793 DEBUG 34504 --- [http-nio-8081-exec-3] c.r.movieapp.controller.MovieController  : listed the available movies
+2023-06-29 16:49:08.800 DEBUG 34504 --- [http-nio-8081-exec-7] c.r.movieapp.controller.MovieController  : here u can access all the available movies
+2023-06-29 16:49:08.802 DEBUG 34504 --- [http-nio-8081-exec-7] c.r.movieapp.controller.MovieController  : listed the available movies
